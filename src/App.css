@@ -1,0 +1,29 @@
+:root{
+
+  --color-primary : #27AE60;
+  --color-primary-50:#93D7AF;
+  --color-secundary:#EB5757;
+
+  --color-gray-100:#333333;
+  --color-gray-50:#828282;
+  --color-gray-20:#E0E0E0;
+  --color-gray-0:#F5F5F5;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-title-1: 28px;
+  --font-title-2: 22px;
+  --font-title-3: 18px;
+  --font-title-4: 14px;
+
+  --font-text-1: 16px;
+  --font-text-2:14px;
+  --font-text-3:12px;
+}
+
+body {
+  outline: 1px red solid;
+}
