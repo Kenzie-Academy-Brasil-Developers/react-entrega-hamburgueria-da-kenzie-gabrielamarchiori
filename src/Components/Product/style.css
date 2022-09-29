@@ -1,0 +1,39 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    border: 2px solid var(--color-gray-20);
+    border-radius: 5px;
+  
+    max-width: 300px;
+  
+    z-index: -1;
+}
+
+.product figure {
+    height: 150px;
+    width: 295px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-end;
+   
+    margin: unset;
+    background-color: var(--color-gray-0);
+    margin-bottom: 30px;
+}
+
+.product h2, span {
+    margin-left: 10px;
+}
+
+.product p {
+    margin-left: 10px;
+}
+
+.product button {
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
