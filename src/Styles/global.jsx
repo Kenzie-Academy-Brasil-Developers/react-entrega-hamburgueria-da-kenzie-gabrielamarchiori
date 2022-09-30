@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   
-  html,body,header,ul,li,img,p,h1,h2,h3,nav,div,a, section, input, button, span {
+  html,body,header,ul,li,img,p,h1,h2,h3,nav,div,a, section, input {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -11,6 +11,11 @@ const GlobalStyle = createGlobalStyle`
     border: none;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+
+
 }
+
+
+  
 `
 export default GlobalStyle

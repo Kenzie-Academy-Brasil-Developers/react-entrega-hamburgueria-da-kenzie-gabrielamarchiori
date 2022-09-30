@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FormDefault = styled.form`
+export const FormDefault = styled.div`
   width: 100%;
 
   display: flex;
