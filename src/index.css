@@ -6,3 +6,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  outline: 1px red solid;
+}

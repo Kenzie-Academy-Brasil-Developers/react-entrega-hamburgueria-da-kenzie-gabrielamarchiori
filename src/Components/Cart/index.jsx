@@ -1,11 +1,12 @@
 import "./style.css";
-import { ButtonRemove } from "../../Styles/buttons";
 
 function Cart({ currentSale, setCurrentSale }) {
 
   const soma = currentSale.reduce((valorAnterior, valorAtual) => {
-    return valorAnterior + Number(valorAtual.preco)
+    return Number(valorAnterior) + Number(valorAtual.preco)
   },0)
+
+  const somaForm = soma.toFixed(2)
 
   function removeItem(index) {
     const itemRemoved = currentSale.filter((item, innerIndex) => {
@@ -27,8 +28,8 @@ function Cart({ currentSale, setCurrentSale }) {
         {currentSale.length > 0 ? (
           <div className="Full-cart">
             <ul className="body-car">
-              {currentSale.map((element, id) => (
-                <li key={id}>
+              {currentSale.map((element, index) => (
+                <li key={index}>
                   <div className="left-car">
                     <figure>
                       <img src={element.imagem} alt={element.nome} />
@@ -38,18 +39,18 @@ function Cart({ currentSale, setCurrentSale }) {
                       <p>{element.categoria}</p>
                     </div>
                   </div>
-                  <button onClick={() => removeItem(id)}>Remover</button>
+                  <button onClick={() => removeItem(index)}>Remover</button>
                 </li>
               ))}
             </ul>
             <div className="Foot">
               <div className="Total-money">
                 <p>Total:</p>
-                <p>R$ {soma}.00</p>
+                <p>R$ {somaForm}</p>
               </div>
-              <ButtonRemove onClick={() => removeAll()} className="btnRemoveAll">
+              <button onClick={() => removeAll()} className="btnRemoveAll">
                 Remover todos
-              </ButtonRemove>
+              </button>
             </div>
           </div>
         ) : (

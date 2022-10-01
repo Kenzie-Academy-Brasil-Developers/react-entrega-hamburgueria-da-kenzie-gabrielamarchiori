@@ -12,6 +12,10 @@ export const ButtonAdd = styled.button`
     color: #FFFFFF;
 
     padding: 5px 10px;
+
+    :hover {
+        filter: brightness(120%);
+    }
 `;
 
 export const ButttonSearch = styled(ButtonAdd) `

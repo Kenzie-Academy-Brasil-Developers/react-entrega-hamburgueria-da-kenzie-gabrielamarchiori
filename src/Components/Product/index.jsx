@@ -1,6 +1,4 @@
 import "./style.css";
-import { Categoria, Nome, Preco } from "../../Styles/typograph";
-import { ButtonAdd } from "../../Styles/buttons";
 
 function Product({ categoria, nome, preco, imagem, handleClick, id }) {
   return (
@@ -8,14 +6,16 @@ function Product({ categoria, nome, preco, imagem, handleClick, id }) {
       <figure>
         <img src={imagem} alt={nome} />
       </figure>
-      <Nome>{nome}</Nome>
-      <Categoria>{categoria}</Categoria>
-      <Preco>R$ {preco}</Preco>
-      <ButtonAdd
+      <h2>{nome}</h2>
+      <p>{categoria}</p>
+      <span>
+        R$ {preco.toString().length < 3 ? `${preco}.00` : `${preco}`}
+      </span>
+      <button
         onClick={() => handleClick(imagem, nome, categoria, preco, id)}
       >
         Adicionar
-      </ButtonAdd>
+      </button>
     </li>
   );
 }

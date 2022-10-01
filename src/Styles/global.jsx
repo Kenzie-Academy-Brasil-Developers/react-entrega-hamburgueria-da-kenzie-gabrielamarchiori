@@ -11,11 +11,11 @@ const GlobalStyle = createGlobalStyle`
     border: none;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-
-
 }
 
+button {
+  cursor: pointer;
+}
 
-  
-`
-export default GlobalStyle
+`;
+export default GlobalStyle;
