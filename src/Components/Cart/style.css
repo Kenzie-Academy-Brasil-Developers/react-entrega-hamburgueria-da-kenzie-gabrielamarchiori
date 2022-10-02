@@ -1,5 +1,6 @@
 .Cart {
   width: 100%;
+  min-width: 300px;
 }
   
 .Container-cart {
@@ -170,22 +171,23 @@
 
 
 @media (min-width: 769px) {
-    
-    .Container-cart {
-        width: 300px;
-        height: fit-content;    
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  
+  .Cart {
+      display: flex;
+      justify-content: center;
+  
+      width: 30%;
+      margin-top: 20px;
+  }
+  .Container-cart {
+   
+    height: fit-content;    
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    .Cart {
-        display: flex;
-        justify-content: center;
-    
-        width: 50%;
-        margin-top: 20px;
-    }
 }
+  
 
   
   
