@@ -27,6 +27,7 @@
     .Cards {
         width: 70%;
         margin-bottom: unset;
+        justify-content: flex-start;
     }
 
     .Page-cards{

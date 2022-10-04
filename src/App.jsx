@@ -29,7 +29,7 @@ function App() {
   }, []);
 
   function showProducts(filteredProducts) {
-    const searchForm = filteredProducts.toLowerCase();
+    const searchForm = filteredProducts.toLowerCase().trim();
 
     const eachItem = products.filter((element) =>
       element.name.toLowerCase().includes(searchForm)
